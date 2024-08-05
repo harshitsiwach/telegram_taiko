@@ -5,7 +5,7 @@ import { ConnectWallet, darkTheme } from "@thirdweb-dev/react";
 
 function Header() {
   return (
-    <div className='bg-transparent w-full absolute top-0 flex justify-between items-center p-2 text-white h-[70px] z-10'>
+    <div className='bg-transparent w-full absolute top-0 flex justify-between items-center p-2 text-black h-[70px] z-10'>
     <div className='flex items-center'>
      <Image
      src='/evm.png'
@@ -40,8 +40,8 @@ function Header() {
             secondaryButtonBg: "",
             connectedButtonBg: "#f52239",
             accentButtonText: "white",
-            primaryButtonBg: "#f52239",
-            primaryButtonText: "white",
+            primaryButtonBg: "#E91898",
+            primaryButtonText: "black",
           },
         })}
         connectModal={{ size: "compact" }}
