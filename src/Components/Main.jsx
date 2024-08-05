@@ -18,9 +18,8 @@ function Main() {
     setIsActive(current => !current);
   }
   return (
-    <div className='h-screen w-screen flex flex-col gap-3 p-3 ' style={{ 
-      background: 'rgb(233,24,152)',
-background: 'radial-gradient(circle, rgba(233,24,152,1) 0%, rgba(255,255,255,1) 100%)'
+    <div className='h-screen w-screen flex flex-col gap-3 p-3 bg-white' style={{ 
+  
     }}>
     
         <div className='text-[#E91898] mt-[90px] text-2xl text-center font-bold font-warfame'style={{fontFamily : "PressStart2P"}}>EVM WARFARE</div>
@@ -53,7 +52,7 @@ background: 'radial-gradient(circle, rgba(233,24,152,1) 0%, rgba(255,255,255,1) 
         <div className=' text-xl font-semibold mt-4 ' >
           <div className='flex flex-row gap-2 dark:text-black text-white'>
            <div style={{fontFamily : "PressStart2P"}}>Play and Win </div> <div className='text-xl'>!</div></div>
-            <div className='font-thin text-md dark:text-white text-white'>Select the game you wanna play : </div>
+            <div className='font-thin text-md dark:text-[#E91898] text-[#E91898]'>Select the game you wanna play : </div>
          </div>
          <div className=' w-full flex gap-4 mt-3'>
             <button  onClick={() => setActiveButton('trending')}
