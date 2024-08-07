@@ -19,7 +19,9 @@ function Main() {
   }
   return (
     <div className='h-screen w-screen flex flex-col gap-3 p-3 bg-white' style={{ 
-  
+      backgroundImage: `url('/bg/Ice Cream.png')`,
+      backgroundSize: 'cover', // Optional: Adjust as needed
+      backgroundPosition: 'center', // Optional: Adjust as needed
     }}>
     
         <div className='text-[#E91898] mt-[90px] text-2xl text-center font-bold font-warfame'style={{fontFamily : "PressStart2P"}}>EVM WARFARE</div>
@@ -122,6 +124,7 @@ function Main() {
                    
                 </div>
             )}
+            
     </div>
   )
 }
