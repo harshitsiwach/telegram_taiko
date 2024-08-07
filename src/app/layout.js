@@ -1,4 +1,4 @@
-"use client"
+
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThirdwebProvider, metamaskWallet, embeddedWallet, smartWallet,rabbyWallet,walletConnect } from "thirdweb/react";
