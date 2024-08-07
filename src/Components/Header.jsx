@@ -1,8 +1,16 @@
 "use client"
 import React from 'react'
 import Image from 'next/image';
-import { ConnectWallet, darkTheme } from "@thirdweb-dev/react";
+import { createThirdwebClient } from "thirdweb";
+import { ConnectButton, darkTheme  } from "thirdweb/react";
 
+import { createWallet } from "thirdweb/wallets";
+const wallets = [
+  createWallet("io.metamask"), // Add your wallet in wallet list
+  createWallet("com.walletconnect.com"), // add other wallets...
+];
+
+const client = createThirdwebClient({ clientId: "a8dfd2be8aa506cd6410ff1ea3de797f" });
 function Header() {
   return (
     <div className='bg-transparent w-full absolute top-0 flex justify-between items-center p-2 text-black h-[70px] z-10'>
@@ -26,7 +34,9 @@ function Header() {
     
     <div className='w-[200px] h-full flex justify-end items-end'>
       <div>
-        <ConnectWallet
+        <ConnectButton 
+        wallets={wallets}
+        client={client}
          theme={darkTheme({
           colors: {
             
