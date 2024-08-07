@@ -4,14 +4,14 @@ import Image from 'next/image';
 import { createThirdwebClient } from "thirdweb";
 import { ConnectButton, darkTheme  } from "thirdweb/react";
 
-import { createWallet } from "thirdweb/wallets";
+import { createWallet,inAppWallet  } from "thirdweb/wallets";
 const wallets = [
   createWallet("io.metamask"), // Add your wallet in wallet list
   
   createWallet("walletConnect"), // add other wallets...
 ];
 
-const client = createThirdwebClient({ clientId: "a8dfd2be8aa506cd6410ff1ea3de797f" });
+const client = createThirdwebClient({ clientId: "63b98dbe94cbbf8ed2913e5ab5d566a4" });
 function Header() {
   return (
     <div className='bg-transparent w-full absolute top-0 flex justify-between items-center p-2 text-black h-[70px] z-10'>
