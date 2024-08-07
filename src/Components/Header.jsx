@@ -7,7 +7,8 @@ import { ConnectButton, darkTheme  } from "thirdweb/react";
 import { createWallet } from "thirdweb/wallets";
 const wallets = [
   createWallet("io.metamask"), // Add your wallet in wallet list
-  createWallet("com.walletconnect.com"), // add other wallets...
+  
+  createWallet("walletConnect"), // add other wallets...
 ];
 
 const client = createThirdwebClient({ clientId: "a8dfd2be8aa506cd6410ff1ea3de797f" });
