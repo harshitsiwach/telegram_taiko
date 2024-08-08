@@ -11,10 +11,10 @@ function Swiperr() {
     <Swiper  autoplay={{
         delay: 2000,
         disableOnInteraction: false,
-      }} pagination={true} modules={[Autoplay,Pagination]} className=" z-10 mySwiper w-full h-[200px] rounded-2xl ">
+      }} pagination={true} modules={[Autoplay,Pagination]} className=" z-10 mySwiper w-full h-[200px] sm:h-full sm:w-[400px]  rounded-2xl ">
       <SwiperSlide className='z-10'>
         <Image
-        className='rounded-2xl'
+        className='rounded-2xl '
         src='/TaikoxEVM.png'
         alt=''
         height={500}

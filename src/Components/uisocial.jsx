@@ -1,10 +1,12 @@
 import React from 'react'
 import './styles.css';
+import Link from 'next/link';
 function Uisocial() {
   return (
    /* From Uiverse.io by escannord */ 
 <div class="main" >
   <div class="up">
+    <Link href='https://www.instagram.com/evm_warfare'>
     <button class="card1">
       <svg
         class="instagram"
@@ -38,6 +40,8 @@ function Uisocial() {
         </g>
       </svg>
     </button>
+    </Link>
+    <Link href='https://x.com/evmwarfare'>
     <button class="card2">
       <svg
         class="twitter"
@@ -51,8 +55,10 @@ function Uisocial() {
         ></path>
       </svg>
     </button>
+    </Link>
   </div>
   <div class="down">
+  <Link href='https://x.com/evmwarfare'>
     <button class="card3">
       <svg
         class="github"
@@ -66,6 +72,8 @@ function Uisocial() {
         ></path>
       </svg>
     </button>
+    </Link>
+    <Link href='https://discord.gg/zRtzA6dkYx'>
     <button class="card4">
       <svg
         class="discord"
@@ -79,6 +87,7 @@ function Uisocial() {
         ></path>
       </svg>
     </button>
+    </Link>
   </div>
 </div>
 

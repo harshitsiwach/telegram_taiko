@@ -15,7 +15,7 @@ function Main() {
     setIsActive(current => !current);
   }
   return (
-    <div className='h-screen w-screen flex flex-col gap-3 p-3 bg-white' style={{ 
+    <div className='h-[1500px]  sm:h-[1200px] w-full flex flex-col gap-3 p-3 bg-white' style={{ 
       backgroundImage: `url('/bg/Ice Cream.png')`,
       backgroundSize: 'cover', // Optional: Adjust as needed
       backgroundPosition: 'center', // Optional: Adjust as needed
@@ -45,9 +45,9 @@ function Main() {
                 }`}>MOST PLAYED</button>
          </div>
          {activeButton === 'trending' && (
-                <div className='mt-5 flex flex-col gap-5'>
+                <div className='mt-5 flex flex-col gap-5 sm:gap-10 sm:flex-row sm:w-[1000px] sm:items-center sm:justify-center'>
                   
-                   <div className='ml-2 mr-2  h-[50px] w-auto flex justify-between items-center'>
+                   <div className='ml-2 mr-2  h-[50px] w-auto sm:w-full flex justify-between items-center'>
                     <div className='flex gap-2 h-full'>
                     <div className='h-full rounded-md  w-[50px] bg-red-600'>
                       <Image
@@ -68,7 +68,7 @@ function Main() {
                         
                     </div>
                    </div>
-                   <div className='ml-2 mr-2  h-[50px] w-auto flex justify-between items-center'>
+                   <div className='ml-2 mr-2  h-[50px] sm:w-full  w-auto flex justify-between items-center'>
                     <div className='flex gap-2 h-full'>
                     <div className='h-full rounded-md  w-[50px] bg-gray-600'>
                       <Image
