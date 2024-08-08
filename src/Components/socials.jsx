@@ -32,8 +32,8 @@ function Download() {
     <div>
       <button onClick={handleClick}>socials</button>
       {showDiv && (
-        <div className='fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-xs'>
-          <div ref={targetRef} >
+        <div className='z-50 fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm'>
+          <div ref={targetRef} className='z-50'>
           <Uisocial/>
           </div>
         </div>

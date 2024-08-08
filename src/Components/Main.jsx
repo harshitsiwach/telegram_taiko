@@ -1,14 +1,11 @@
 "use client"
 import React,{useState} from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import Image from 'next/image';
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-import Link from 'next/link';
 
+import Image from 'next/image';
+
+import Link from 'next/link';
+import Swiperr from './Swiper';
 // import required modules
-import {Autoplay, Pagination } from 'swiper/modules';
 import { Press_Start_2P } from 'next/font/google';
 function Main() {
   const [activeButton, setActiveButton] = useState('trending');
@@ -25,30 +22,9 @@ function Main() {
     }}>
     
         <div className='text-[#E91898] mt-[90px] text-2xl text-center font-bold font-warfame'style={{fontFamily : "PressStart2P"}}>EVM WARFARE</div>
-        
-        <Swiper  autoplay={{
-          delay: 2000,
-          disableOnInteraction: false,
-        }} pagination={true} modules={[Autoplay,Pagination]} className="mySwiper w-full h-[200px] rounded-2xl bg-black">
-        <SwiperSlide>
-          <Image
-          className='rounded-2xl'
-          src='/TaikoxEVM.png'
-          alt=''
-          height={500}
-          width={500}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-           <Image
-          className='rounded-2xl'
-          src='/x_1.png'
-          alt=''
-          height={200}
-          width={500}
-          /></SwiperSlide>
-      </Swiper>
-      
+       <div className='z-0'>
+       <Swiperr/>
+       </div> 
        
        
         <div className=' text-xl font-semibold mt-4 ' >
