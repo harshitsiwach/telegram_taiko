@@ -11,7 +11,7 @@ import Image from 'next/image';
 //   createWallet("walletConnect"), // add other wallets...
 // ];
 import { ConnectWallet,darkTheme } from "@thirdweb-dev/react";
-
+import { ConnectEmbed } from "@thirdweb-dev/react";
 // const client = createThirdwebClient({ clientId: "63b98dbe94cbbf8ed2913e5ab5d566a4" });
 function Header() {
   return (
@@ -58,6 +58,8 @@ function Header() {
         })}
         connectModal={{ size: "compact" }}
       /> */}
+
+
       <ConnectWallet
         theme={darkTheme({
           colors: {
@@ -78,6 +80,7 @@ function Header() {
         })}
         connectModal={{ size: "compact" }}
       />
+    
       </div>
       
   
