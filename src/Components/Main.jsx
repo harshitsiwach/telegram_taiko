@@ -28,11 +28,11 @@ function Main() {
        
        
         <div className=' text-xl font-semibold mt-4 ' >
-          <div className='flex flex-row gap-2 dark:text-black text-white'>
+          <div className='flex flex-row gap-2 dark:text-black text-white sm:items-center sm:justify-center'>
            <div style={{fontFamily : "PressStart2P"}}>Play and Win </div> <div className='text-xl'>!</div></div>
-            <div className='font-thin text-md dark:text-[#E91898] text-[#E91898]'>Select the game you wanna play : </div>
+            <div className='font-thin text-md dark:text-black text-black sm:flex sm:w-full sm:justify-center sm:items-center'>Select the game you wanna play : </div>
          </div>
-         <div className=' w-full flex gap-4 mt-3'>
+         <div className=' w-full flex gap-4 mt-3 sm:items-center sm:justify-center'>
             <button  onClick={() => setActiveButton('trending')}
                 className={`h-[40px] w-[110px] rounded-md border-red-600 border-2 font-bold dark:text-white text-white  ${
                     activeButton === 'trending' ? 'bg-[#E91898] dark:text-black text-black' : 'bg-transparent'
@@ -45,11 +45,11 @@ function Main() {
                 }`}>MOST PLAYED</button>
          </div>
          {activeButton === 'trending' && (
-                <div className='mt-5 flex flex-col gap-5 sm:gap-10 sm:flex-row sm:w-[1000px] sm:items-center sm:justify-center'>
+                <div className='mt-5 flex flex-col gap-5 sm:gap-10 sm:flex-row sm:w-full sm:items-center sm:justify-center'>
                   
-                   <div className='ml-2 mr-2  h-[50px] w-auto sm:w-full flex justify-between items-center'>
-                    <div className='flex gap-2 h-full'>
-                    <div className='h-full rounded-md  w-[50px] bg-red-600'>
+                   <div className='sm:rounded-md ml-2 mr-2  h-[70px] w-auto sm:pl-2 sm:pr-2 sm:w-[400px] sm:bg-white  flex justify-between items-center'>
+                    <div className='flex gap-2 h-full sm:flex sm:items-center sm:justify-center'>
+                    <div className='h-3/4  rounded-md  w-[50px] bg-red-600'>
                       <Image
                       src='/game/vNQdsn.png'
                       alt='game immage'
@@ -68,9 +68,9 @@ function Main() {
                         
                     </div>
                    </div>
-                   <div className='ml-2 mr-2  h-[50px] sm:w-full  w-auto flex justify-between items-center'>
-                    <div className='flex gap-2 h-full'>
-                    <div className='h-full rounded-md  w-[50px] bg-gray-600'>
+                   <div className='sm:rounded-md ml-2 mr-2  h-[70px] w-auto sm:pl-2 sm:pr-2 sm:w-[400px] sm:bg-white  flex justify-between items-center'>
+                    <div className='flex gap-2 h-full sm:flex sm:items-center sm:justify-center'>
+                    <div className='h-3/4  rounded-md  w-[50px] bg-red-600'>
                       <Image
                       src='/game/file-nKv9DWllpeerZm3psT0UChtm.png'
                       alt='game immage'
