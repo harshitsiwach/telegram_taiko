@@ -15,7 +15,7 @@ function Swiperr() {
       <SwiperSlide className='z-10'>
         <Image
         className='rounded-2xl '
-        src='/TaikoxEVM.png'
+        src='/TaikoxEVM2.1.png'
         alt=''
         height={500}
         width={500}
@@ -26,7 +26,7 @@ function Swiperr() {
         className='rounded-2xl'
         src='/x_1.png'
         alt=''
-        height={200}
+        height={500}
         width={500}
         /></SwiperSlide>
     </Swiper>
