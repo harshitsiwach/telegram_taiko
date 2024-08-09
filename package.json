@@ -10,6 +10,8 @@
   "dependencies": {
     "@thirdweb-dev/react": "^4.6.26",
     "@thirdweb-dev/sdk": "^4.0.87",
+    "axios": "^1.7.3",
+    "cheerio": "^1.0.0",
     "ethers": "^5.7.2",
     "next": "14.2.3",
     "react": "^18.2.0",
